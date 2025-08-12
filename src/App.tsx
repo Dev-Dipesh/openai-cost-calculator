@@ -29,27 +29,24 @@ function App() {
           </p>
         </div>
 
-        {/* Main Content */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
-          {/* Left Column - Inputs */}
-          <div className="space-y-6">
-            <ModelSelector />
-            <TokenInput />
-            <CurrencySelector />
-          </div>
-
-          {/* Right Column - Results */}
-          <div className="space-y-6">
-            <CostDisplay />
-          </div>
+        {/* Input Controls - 3 Columns */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
+          <ModelSelector />
+          <TokenInput />
+          <CurrencySelector />
         </div>
 
-        {/* Full Width - Provider Comparison */}
+        {/* Cost Display - Full Width */}
+        <div className="mb-8">
+          <CostDisplay />
+        </div>
+
+        {/* Provider Comparison - Full Width */}
         <div className="mb-8">
           <ProviderComparison />
         </div>
 
-        {/* Full Width - Model Comparison Table */}
+        {/* Model Comparison Table - Full Width */}
         <div className="mb-8">
           <CostTable />
         </div>
