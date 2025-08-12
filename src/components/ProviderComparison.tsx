@@ -81,8 +81,8 @@ export function ProviderComparison() {
             {Object.keys(PROVIDERS).map(providerId => (
               <Button
                 key={providerId}
-                variant={selectedProviders.includes(providerId as Provider) ? \"default\" : \"outline\"}
-                size=\"sm\"
+                variant={selectedProviders.includes(providerId as Provider) ? "default" : "outline"}
+                size="sm"
                 onClick={() => toggleProvider(providerId as Provider)}
               >
                 {PROVIDERS[providerId as Provider].name}
@@ -140,7 +140,7 @@ export function ProviderComparison() {
                   <Button 
                     className="w-full mt-3" 
                     size="sm"
-                    variant={isWinner ? \"default\" : \"outline\"}
+                    variant={isWinner ? "default" : "outline"}
                     onClick={(e) => {
                       e.stopPropagation();
                       handleProviderSelect(provider.id);

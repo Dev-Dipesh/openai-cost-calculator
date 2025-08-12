@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { useCalculatorStore } from '@/store/calculatorStore';
 import { formatCost, convertCurrency } from '@/utils/calculator';
 import { PROVIDERS } from '@/types/providers';
-import { Table, BarChart3 } from 'lucide-react';
+import { BarChart3 } from 'lucide-react';
 import type { Provider } from '@/types/providers';
 
 export function CostTable() {
